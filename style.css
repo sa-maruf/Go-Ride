@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-self: center;
+    width: 1440px;
+    /* border: 2px solid green; */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* Head part  */
+
+.head-part {
+    background-color: rgb(38, 70, 83);
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 698px;
+    
+}
+
+.head-part nav {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    justify-self: center;
+    padding-top: 50px;
+    
+}
+
+.head-part nav ul {
+    display: flex;
+    gap: 36px;
+    margin-left: 685px;
+}
+
+.head-part nav ul a {
+    text-decoration: none;
+
+}
+
+.head-part nav ul a li {
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.head-part button {
+    width: 100px;
+    height: 40px;
+    left: 1124px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(231, 111, 81);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+} 
+
+/* Fetured Bikes part  */
+
+/* latest News page */
+
+.bike-box .data-01 {
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.bike-box .data-02 {
+    color: rgb(108, 108, 108);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400; 
+    margin-top: 10px;
+}
+
+.bike-box .lt-btn {
+    margin-top: 20px;
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(231, 111, 81);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Happy Clients says page */
+
+.happy .bio-01 {
+    color: rgb(108, 108, 108);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.happy .bio-02 {
+    color: rgb(35, 166, 240);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.happy .bio-03 {
+    color: rgb(37, 43, 66);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600; 
+    margin-top: 10px;
+}
+
+
+/* foot part  */
+
+.foot {
+    margin-top: 120px;
+    background-color: rgb(11, 13, 23);
+    height: 340px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 450px;
+}
+
+.foot ul {
+    display: flex;
+    gap: 20px;
+}
+
+.foot ul li {
+    list-style: none;
+}
+
+.foot ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+}
