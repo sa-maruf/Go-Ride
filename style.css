@@ -1,34 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    justify-self: center;
-    width: 1440px;
-    /* border: 2px solid green; */
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
-    
+    width: 100%;
+
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(231, 111, 81);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /* Head part  */
-
-.head-part {
+header {
     background-color: rgb(38, 70, 83);
-    background-position: center;
-    background-size: cover;
-    width: 1440px;
-    height: 698px;
-    
 }
 
+.head-part {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* nav bar part  */
 .head-part nav {
     display: flex;
     align-items: center;
     width: 1200px;
     justify-self: center;
     padding-top: 50px;
-    
+
 }
 
 .head-part nav ul {
@@ -48,10 +60,10 @@ body {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
-    
+
 }
 
-.head-part button {
+/* .head-part button {
     width: 100px;
     height: 40px;
     left: 1124px;
@@ -63,9 +75,41 @@ body {
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
-} 
+} */
+
+/* Hero part  */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+}
+.hero .pera-03{
+    color: rgb(224, 224, 224);
+    font-size: 12px; 
+    font-weight: 300; 
+    margin-top: 10px;
+    width: 60%;
+}
+/* main part  */
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    border: 1px solid;
+}
 
 /* Fetured Bikes part  */
+.fet-bikes{
+    margin-top: 60px;
+    
+    /* justify-content: space-between; */
+    
+}
+.fet-bikes .bike {
+    display: grid;
+    grid-template-columns: 3;
+}
 
 /* latest News page */
 
@@ -81,7 +125,7 @@ body {
     color: rgb(108, 108, 108);
     font-family: Poppins;
     font-size: 12px;
-    font-weight: 400; 
+    font-weight: 400;
     margin-top: 10px;
 }
 
@@ -121,7 +165,7 @@ body {
     color: rgb(37, 43, 66);
     font-family: Poppins;
     font-size: 14px;
-    font-weight: 600; 
+    font-weight: 600;
     margin-top: 10px;
 }
 
@@ -131,7 +175,7 @@ body {
 .foot {
     margin-top: 120px;
     background-color: rgb(11, 13, 23);
-    height: 340px; 
+    height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;

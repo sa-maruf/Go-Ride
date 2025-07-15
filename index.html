@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go Ride</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
+
 <body>
-
     <!-- Head part  -->
-
-    <section class="head-part ">
-        <nav >
+    <header>
+        <section class="head-part ">
+            <!-- <nav style="height: 120px;"></nav> -->
+            <!-- <nav >
             <p style="color: rgb(255, 255, 255); font-family: Poppins; font-size: 26px; font-weight: 700;">Go Ride</p>
             <ul>
                 <a href="#"><li>Home</li></a>
@@ -21,43 +23,47 @@
                 <a href="#"><li>Contact</li></a>
             </ul>
             <a href="#"><button style="margin-left: 30px;">Login</button></a>
-        </nav>
+        </nav> -->
+            <div class="hero">
+                <div>
+                    <p style="color: rgb(255, 255, 255); font-size: 10px; font-weight: 300;">
+                        Computer-controlled digital transistorized with electronic advance</p>
+                    <p style="color: rgb(255, 255, 255); font-size: 36px; font-weight: 600; margin-top: 6px;">
+                        Honda CBR 300R</p>
+                    <p class="pera-03">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <a href="#"><button class="btn" style="margin-top: 20px;">Purchase</button></a>
+                </div>
 
-        <div style="display: flex; align-items: center; justify-content: center; padding-top: 100px; gap: 200px;">
-            <div>
-                <p style="color: rgb(255, 255, 255); font-family: Poppins; font-size: 10px; font-weight: 300;">Computer-controlled digital transistorized with electronic advance</p>
-                <p style="color: rgb(255, 255, 255); font-family: Poppins; font-size: 36px; font-weight: 600; margin-top: 6px;">Honda CBR 300R</p>
-                <p style="color: rgb(224, 224, 224); font-family: Poppins; font-size: 12px; font-weight: 300; margin-top: 10px;">Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit officia consequat duis enim velit <br> mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <a href="#"><button style="width: 130px; margin-top: 12px;">Purchase</button></a>
+                <div>
+                    <img src="./images/bike/head-bike.png" alt="" width="100%">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Fetured Bikes part  -->
+        <section style=" margin-top: 80px;">
+            <div style="text-align: center;">
+                <p style="color: rgb(0, 0, 0); font-size: 34px; font-weight: 600;">Fetured Bikes
+                    In This Year</p>
+                <p style=" color: rgb(231, 111, 81); font-size: 12px; font-weight: 600;">Best bike
+                    collection</p>
+                <hr style="width: 40px; height: 2px; justify-self: center; background-color: rgb(231, 111, 81);;">
             </div>
 
-            <div>
-                <img src="./images/bike/head-bike.png" alt="">
+            <div class="fet-bikes">
+                <div class="bike"><img src="./images/others/feature-bike.png" alt="" ></div>
+                <div class="bike"><img src="./images/others/feature-bike.png" alt="" ></div>
+                <div class="bike"><img src="./images/others/feature-bike.png" alt="" ></div>
             </div>
-        </div>
+        </section>
 
-    </section>
-
-    <!-- Fetured Bikes part  -->
-
-    <section style="width: 1200px;  justify-self: center; margin-top: 60px;">
-        <div style="text-align: center;">
-            <p style="color: rgb(0, 0, 0); font-family: Poppins; font-size: 34px; font-weight: 600;">Fetured Bikes In This Year</p>
-            <p style=" color: rgb(231, 111, 81); font-family: Poppins; font-size: 12px; font-weight: 600;">Best bike collection</p>
-            <hr style="width: 40px; height: 1px; justify-self: center; background-color: rgb(231, 111, 81);;">
-        </div>
-
-        <div style="display: flex; justify-content: center; gap: 180px; margin-top: 60px;">
-            <img src="./images/others/feature-bike.png" alt="" width="240px" height="200px">
-            <img src="./images/others/feature-bike.png" alt="" width="240px" height="200px">
-            <img src="./images/others/feature-bike.png" alt="" width="240px" height="200px">
-        </div>
-    </section>
-
-    <!-- latest News page  -->
+        <!-- latest News page  -->
 
 
-    <section style="margin-top: 80px;">
+        <!-- <section style="margin-top: 80px;">
         <div style="text-align: center;">
             <p style="color: rgb(10, 8, 38); font-family: Poppins; font-size: 34px; font-weight: 600;">Latest News</p>
         </div>
@@ -90,11 +96,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Happy Clients says page  -->
+        <!-- Happy Clients says page  -->
 
-    <section style="margin-top: 100px;">
+        <!-- <section style="margin-top: 100px;">
         <div style="text-align: center;">
             <p style=" color: rgb(13, 9, 37); font-family: Poppins; font-size: 34px; font-weight: 600;">Happy <span style="color: rgb(231, 111, 81);">Clients says</span></p>
         </div>
@@ -152,11 +158,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    </main>
 
     <!-- foot part  -->
 
-    <section class="foot">
+    <!-- <section class="foot">
         <div>
             <ul>
                 <li><a href="#">Download Now</a></li>
@@ -185,8 +193,9 @@
                 <a href="#"><img src="./images/others/android.png" alt="" width="120px"></a>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    
+
 </body>
+
 </html>

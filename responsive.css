@@ -1,0 +1,39 @@
+@media(max-width:768px) {
+
+    /* Header part  */
+    .head-part {
+        padding: 60px 18px;
+    }
+
+    /* Hero part  */
+    .hero {
+        flex-direction: column;
+        padding: 0;
+        gap: 40px;
+    }
+
+    .hero .pera-03 {
+        width: 90%;
+    }
+
+    /* main part  */
+    main {
+        padding: 0 18pxpx;
+    }
+
+    /* Fetured Bikes part  */
+    .fet-bikes {
+        grid-template-columns: 1;
+        gap: 50px;
+        justify-content: center;
+    }
+}
+
+@media(min-width:769px) and (max-width:970px) {
+    /* .hero{
+        padding: 40px 10px;
+    } */
+     .fet-bikes {
+        grid-template-columns: 2;
+    }
+}
