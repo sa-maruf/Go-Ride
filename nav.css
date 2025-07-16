@@ -1,0 +1,58 @@
+.navbar{
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.menu a{
+    color: white;
+}
+
+.mob-menu-btn {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .navbar{
+        padding:30px 0;
+        position: relative;
+    }
+    .mob-menu-btn {
+        display: flex;
+        font-size: 28px;
+        color: white;
+    }
+    .menu{
+        display: none;
+    }
+    .menu.active{
+        display: block;
+    }
+    .mob-menu{
+        position: absolute;
+        margin-bottom: -400px;
+        background-color: rgb(29, 98, 126);
+        width: 100%;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .mob-menu li{
+        margin-top: 20px;
+    }
+    .mob-login{
+        margin-top: 20px;
+        width: 100%;
+    }
+}

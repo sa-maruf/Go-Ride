@@ -5,25 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go Ride</title>
+    <script src="https://kit.fontawesome.com/34353e81d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./nav.css">
 </head>
 
 <body>
     <!-- Head part  -->
     <header>
         <section class="head-part ">
-            <!-- <nav style="height: 120px;"></nav> -->
-            <!-- <nav >
-            <p style="color: rgb(255, 255, 255); font-family: Poppins; font-size: 26px; font-weight: 700;">Go Ride</p>
-            <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Shop</li></a>
-                <a href="#"><li>News</li></a>
-                <a href="#"><li>Contact</li></a>
-            </ul>
-            <a href="#"><button style="margin-left: 30px;">Login</button></a>
-        </nav> -->
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Go Ride</h1>
+                </div>
+                <div id="mob-menu" class="menu mob-menu">
+                    <a href="#">
+                        <li style="margin: 0;">Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Shop</li>
+                    </a>
+                    <a href="#">
+                        <li>News</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#"><button class="btn mob-login">Login</button></a>
+                </div>
+                <div id="mob-menu-btn" class="mob-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
             <div class="hero">
                 <div>
                     <p style="color: rgb(255, 255, 255); font-size: 10px; font-weight: 300;">
@@ -44,7 +58,7 @@
     </header>
     <main>
         <!-- Fetured Bikes part  -->
-        <section style=" margin-top: 80px;">
+        <section style=" margin-top: 120px;">
             <div style="text-align: center;">
                 <p style="color: rgb(0, 0, 0); font-size: 34px; font-weight: 600;">Fetured Bikes
                     In This Year</p>
@@ -54,148 +68,233 @@
             </div>
 
             <div class="fet-bikes">
-                <div class="bike"><img src="./images/others/feature-bike.png" alt="" ></div>
-                <div class="bike"><img src="./images/others/feature-bike.png" alt="" ></div>
-                <div class="bike"><img src="./images/others/feature-bike.png" alt="" ></div>
+                <img class="bike" src="./images/others/feature-bike.png" alt="">
+                <img class="bike" src="./images/others/feature-bike.png" alt="">
+                <img class="bike" src="./images/others/feature-bike.png" alt="">
+                <img class="bike" src="./images/others/feature-bike.png" alt="">
+                <img class="bike" src="./images/others/feature-bike.png" alt="">
+                <img class="bike" src="./images/others/feature-bike.png" alt="">
             </div>
         </section>
-
         <!-- latest News page  -->
-
-
-        <!-- <section style="margin-top: 80px;">
-        <div style="text-align: center;">
-            <p style="color: rgb(10, 8, 38); font-family: Poppins; font-size: 34px; font-weight: 600;">Latest News</p>
-        </div>
-
-        <div class="bike-box" style="display: flex; justify-content: center; gap: 30px; margin-top: 30px;">
-            <div style=" width: 320px; height: 410px; display: flex; justify-content: center; align-items: center; box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);">
-                <div>
-                    <img src="./images/others/latest1.png" alt="" width="270px" height="180px">
-                    <p class="data-01">Ducati XDIAVEL S-73</p>
-                    <p class="data-02">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lacus, fermentum amet <br> faucibus sed id nisi lectus at.</p>
-                    <a href="#"><button class="lt-btn">Read More</button></a>
-                </div>
+        <section style="margin-top: 120px;">
+            <div style="text-align: center;">
+                <p style="color: rgb(10, 8, 38); font-size: 34px; font-weight: 600;">Latest News</p>
             </div>
 
-            <div style=" width: 320px; height: 410px; display: flex; justify-content: center; align-items: center; box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);">
-                <div>
-                    <img src="./images/others/latest2.png" alt="" width="270px" height="180px">
-                    <p class="data-01">Motorcycles & Scooters</p>
-                    <p class="data-02">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lacus, fermentum amet <br> faucibus sed id nisi lectus at.</p>
-                    <a href="#"><button class="lt-btn">Read More</button></a>
+            <div class="bike-table">
+                <!-- box 01  -->
+                <div class="bike-box">
+                    <div>
+                        <img src="./images/others/latest1.png" alt="">
+                        <p class="data-01">Ducati XDIAVEL S-73</p>
+                        <p class="data-02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+                            amet faucibus sed id nisi lectus at.</p>
+                        <a href="#"><button class="btn">Read More</button></a>
+                    </div>
+                </div>
+                <!-- box 02  -->
+                <div class="bike-box">
+                    <div>
+                        <img src="./images/others/latest2.png" alt="">
+                        <p class="data-01">Motorcycles & Scooters</p>
+                        <p class="data-02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+                            amet faucibus sed id nisi lectus at.</p>
+                        <a href="#"><button class="btn">Read More</button></a>
+                    </div>
+                </div>
+                <!-- box 03 -->
+                <div class="bike-box">
+                    <div>
+                        <img src="./images/others/latest3.png" alt="">
+                        <p class="data-01">2021 Honda CBR500R</p>
+                        <p class="data-02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+                            amet faucibus sed id nisi lectus at.</p>
+                        <a href="#"><button class="btn">Read More</button></a>
+                    </div>
+                </div>
+                <!-- box 04  -->
+                <div class="bike-box">
+                    <div>
+                        <img src="./images/others/latest1.png" alt="">
+                        <p class="data-01">Ducati XDIAVEL S-73</p>
+                        <p class="data-02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+                            amet faucibus sed id nisi lectus at.</p>
+                        <a href="#"><button class="btn">Read More</button></a>
+                    </div>
+                </div>
+                <!-- box 05  -->
+                <div class="bike-box">
+                    <div>
+                        <img src="./images/others/latest2.png" alt="">
+                        <p class="data-01">Motorcycles & Scooters</p>
+                        <p class="data-02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+                            amet faucibus sed id nisi lectus at.</p>
+                        <a href="#"><button class="btn">Read More</button></a>
+                    </div>
+                </div>
+                <!-- box 06 -->
+                <div class="bike-box">
+                    <div>
+                        <img src="./images/others/latest3.png" alt="">
+                        <p class="data-01">2021 Honda CBR500R</p>
+                        <p class="data-02">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum
+                            amet faucibus sed id nisi lectus at.</p>
+                        <a href="#"><button class="btn">Read More</button></a>
+                    </div>
                 </div>
             </div>
-
-            <div style=" width: 320px; height: 410px; display: flex; justify-content: center; align-items: center; box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);">
-                <div>
-                    <img src="./images/others/latest3.png" alt="" width="270px" height="180px">
-                    <p class="data-01">2021 Honda CBR500R</p>
-                    <p class="data-02">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lacus, fermentum amet <br> faucibus sed id nisi lectus at.</p>
-                    <a href="#"><button class="lt-btn">Read More</button></a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+        </section>
         <!-- Happy Clients says page  -->
+        <section style="margin-top: 120px;">
+            <div style="text-align: center;">
+                <p style=" color: rgb(13, 9, 37); font-size: 34px; font-weight: 600;">Happy <span
+                        style="color: rgb(231, 111, 81);">Clients says</span></p>
+            </div>
 
-        <!-- <section style="margin-top: 100px;">
-        <div style="text-align: center;">
-            <p style=" color: rgb(13, 9, 37); font-family: Poppins; font-size: 34px; font-weight: 600;">Happy <span style="color: rgb(231, 111, 81);">Clients says</span></p>
-        </div>
-
-        <div class="happy" style="display: flex; gap: 40px; justify-content: center; margin-top: 50px;">
-
-            <div style="border: 1px solid rgb(222, 222, 222); border-radius: 5px; width: 300px; height: 400px; display: flex; align-items: center; justify-content: center; text-align: center;">
-
-                <div>
-                    <img src="./images/others/user-1.png" alt="" width="120px">
-                    <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach your financial <br> goal for the month and year.</p>
-                      <div style="margin-top: 10px;">
-                         <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                         <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                         <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                         <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
-                         <img src="./images/icons/star-regular.svg" alt="" width="20px">
-                     </div>
-                    <p class="bio-02">Regina Miles</p>
-                    <p class="bio-03">Banker</p>
+            <div class="happy-box">
+                <!-- box 01  -->
+                <div class="clients-box">
+                    <div>
+                        <img src="./images/others/user-1.png" alt="" width="120px">
+                        <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach
+                            your financial <br> goal for the month and year.</p>
+                        <div style="margin-top: 10px;">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-regular.svg" alt="" width="20px">
+                        </div>
+                        <p class="bio-02">Regina Miles</p>
+                        <p class="bio-03">Banker</p>
+                    </div>
+                </div>
+                <!-- box 02  -->
+                <div class="clients-box">
+                    <div>
+                        <img src="./images/others/user-2.png" alt="" width="120px">
+                        <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach
+                            your financial <br> goal for the month and year.</p>
+                        <div style="margin-top: 10px;">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-regular.svg" alt="" width="20px">
+                        </div>
+                        <p class="bio-02">Regina Miles</p>
+                        <p class="bio-03">Banker</p>
+                    </div>
+                </div>
+                <!-- box 03  -->
+                <div class="clients-box">
+                    <div>
+                        <img src="./images/others/user-3.png" alt="" width="120px">
+                        <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach
+                            your financial <br> goal for the month and year.</p>
+                        <div style="margin-top: 10px;">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-regular.svg" alt="" width="20px">
+                        </div>
+                        <p class="bio-02">Regina Miles</p>
+                        <p class="bio-03">Banker</p>
+                    </div>
+                </div>
+                <!-- box 04  -->
+                <div class="clients-box">
+                    <div>
+                        <img src="./images/others/user-1.png" alt="" width="120px">
+                        <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach
+                            your financial <br> goal for the month and year.</p>
+                        <div style="margin-top: 10px;">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-regular.svg" alt="" width="20px">
+                        </div>
+                        <p class="bio-02">Regina Miles</p>
+                        <p class="bio-03">Banker</p>
+                    </div>
+                </div>
+                <!-- box 05  -->
+                <div class="clients-box">
+                    <div>
+                        <img src="./images/others/user-2.png" alt="" width="120px">
+                        <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach
+                            your financial <br> goal for the month and year.</p>
+                        <div style="margin-top: 10px;">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-regular.svg" alt="" width="20px">
+                        </div>
+                        <p class="bio-02">Regina Miles</p>
+                        <p class="bio-03">Banker</p>
+                    </div>
+                </div>
+                <!-- box 06  -->
+                <div class="clients-box">
+                    <div>
+                        <img src="./images/others/user-3.png" alt="" width="120px">
+                        <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach
+                            your financial <br> goal for the month and year.</p>
+                        <div style="margin-top: 10px;">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
+                            <img src="./images/icons/star-regular.svg" alt="" width="20px">
+                        </div>
+                        <p class="bio-02">Regina Miles</p>
+                        <p class="bio-03">Banker</p>
+                    </div>
                 </div>
             </div>
-
-            <div style="border: 1px solid rgb(222, 222, 222); border-radius: 5px; width: 300px; height: 400px; display: flex; align-items: center; justify-content: center; text-align: center;">
-
-                <div>
-                    <img src="./images/others/user-2.png" alt="" width="120px">
-                    <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach your financial <br> goal for the month and year.</p>
-                      <div style="margin-top: 10px;">
-                        <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-regular.svg" alt="" width="20px">
-                     </div>
-                   <p class="bio-02">Regina Miles</p>
-                   <p class="bio-03">Banker</p>
-                   </div>
-            </div>
-
-            <div style="border: 1px solid rgb(222, 222, 222); border-radius: 5px; width: 300px; height: 400px; display: flex; align-items: center; justify-content: center; text-align: center;">
-
-                <div>
-                    <img src="./images/others/user-3.png" alt="" width="120px">
-                    <p class="bio-01">Slate helps you see how <br> many more days you need <br> to work to reach your financial <br> goal for the month and year.</p>
-                      <div style="margin-top: 10px;">
-                        <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-half-stroke-solid.svg" alt="" width="20px">
-                        <img src="./images/icons/star-regular.svg" alt="" width="20px">
-                      </div>
-                    <p class="bio-02">Regina Miles</p>
-                    <p class="bio-03">Banker</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+        </section>
     </main>
-
     <!-- foot part  -->
+    <footer>
+        <section class="foot">
+            <div>
+                <ul>
+                    <li><a href="#">Download Now</a></li>
+                    <li><a href="#">License</a></li>
+                </ul>
 
-    <!-- <section class="foot">
-        <div>
-            <ul>
-                <li><a href="#">Download Now</a></li>
-                <li><a href="#">License</a></li>
-            </ul>
+                <ul style="margin-top: 20px;">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
 
-            <ul style="margin-top: 20px;">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-
-            <p style="color: rgb(217, 219, 225); font-family: Manrope; font-size: 14px; font-weight: 400; margin-top: 20px;">© 2020 bike. All rights reserved</p>
-        </div>
-
-        <div>
-            <p style="color: rgb(217, 219, 225); font-family: Manrope; font-size: 18px; font-weight: 500;">Get the App</p>
-            <div style="margin-top: 20px;">
-                <a href="#"><img src="./images/others/ios.png" alt="" width="120px"></a>
+                <p
+                    style="color: rgb(217, 219, 225); font-family: Manrope; font-size: 14px; font-weight: 400; margin-top: 20px;">
+                    © 2020 bike. All rights reserved</p>
             </div>
-            
-            <div style="margin-top: 10px;">
-                <a href="#"><img src="./images/others/android.png" alt="" width="120px"></a>
+
+            <div>
+                <p style="color: rgb(217, 219, 225); font-size: 18px; font-weight: 500;">Get the
+                    App</p>
+                <div style="margin-top: 20px;">
+                    <a href="#"><img src="./images/others/ios.png" alt="" width="120px"></a>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <a href="#"><img src="./images/others/android.png" alt="" width="120px"></a>
+                </div>
             </div>
-        </div>
-    </section> -->
-
-
+        </section>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

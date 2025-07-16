@@ -2,13 +2,13 @@
 
     /* Header part  */
     .head-part {
-        padding: 60px 18px;
+        padding:0 18px;
     }
 
     /* Hero part  */
     .hero {
         flex-direction: column;
-        padding: 0;
+        padding: 50px 0;
         gap: 40px;
     }
 
@@ -18,22 +18,54 @@
 
     /* main part  */
     main {
-        padding: 0 18pxpx;
+        padding: 0 18px;
     }
 
     /* Fetured Bikes part  */
     .fet-bikes {
-        grid-template-columns: 1;
-        gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
         justify-content: center;
+    }
+
+    .fet-bikes img {
+        width: 70%;
+    }
+
+    /* latest News page */
+    .bike-table {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    /* Happy Clients says page */
+    .happy-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer part  */
+    .foot {
+        flex-direction: column;
+        gap:40px;
+    }
+
+    .foot ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
     }
 }
 
 @media(min-width:769px) and (max-width:970px) {
-    /* .hero{
-        padding: 40px 10px;
-    } */
-     .fet-bikes {
-        grid-template-columns: 2;
+    .fet-bikes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bike-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .happy-box {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
